@@ -1,0 +1,30 @@
+# Training Configuration
+seed: 42
+max_epochs: 300
+val_interval: 1
+batch_size: 1
+learning_rate: 0.0001
+weight_decay: 0.00001
+
+# Device Configuration
+device: "cuda:0"  # or "cpu"
+
+# Data Configuration
+data_dir: "F:/Project/Brain/Brain-Tumor-Segmentation"
+num_workers: 4
+output_dir: "./models"
+
+# Model Configuration
+model:
+  blocks_down: [1, 2, 2, 4]
+  blocks_up: [1, 1, 1]
+  init_filters: 16
+  in_channels: 4
+  out_channels: 3
+  dropout_prob: 0.2
+
+# Inference Configuration
+inference:
+  roi_size: [240, 240, 160]
+  sw_batch_size: 1
+  overlap: 0.5
