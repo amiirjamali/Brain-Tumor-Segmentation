@@ -1,10 +1,10 @@
-# Brain-Tumor-Segmentation
+Brain Tumor Segmentation
 
-🧠 A deep learning system for 3D brain tumor segmentation from MRI scans using MONAI and PyTorch.
-📋 Project Overview
+A deep learning system for 3D brain tumor segmentation from MRI scans using MONAI and PyTorch.
+Project Overview
 
 This project implements a medical image segmentation system that can automatically identify and segment brain tumors from MRI scans. Using the BraTS dataset and state-of-the-art deep learning techniques, the system classifies tumors into three regions: Whole Tumor (WT), Tumor Core (TC), and Enhancing Tumor (ET).
-🚀 Features
+Features
 
     3D Medical Image Processing: Handles full 3D MRI volumes (T1, T1ce, T2, FLAIR modalities)
 
@@ -18,7 +18,7 @@ This project implements a medical image segmentation system that can automatical
 
     ONNX Export: Supports model export for deployment
 
-🛠️ Quick Start
+Quick Start
 Installation
 bash
 
@@ -32,7 +32,7 @@ bash
 python train.py
 
 The system will automatically download the BraTS dataset (requires ~50GB space) and start training a SegResNet model.
-📊 Model Performance
+Model Performance
 
 The model achieves competitive results on the BraTS validation set:
 
