@@ -3,6 +3,9 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+# Datas
+Task01_BrainTumour
+
 # C extensions
 *.so
 
